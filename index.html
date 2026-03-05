@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Developer Portfolio</title>
+  <title>Oswaldo Bayona | Full-Stack & AI Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -338,6 +338,10 @@
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     }
 
+    .project-card a {
+      
+    }
+
     .project-image {
       width: 100%;
       height: 200px;
@@ -348,12 +352,13 @@
       color: var(--text-muted);
       font-size: 3rem;
       overflow: hidden;
+      padding: 5px;
     }
 
     .project-image img {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+      object-fit: contain;
     }
 
     .project-content {
@@ -364,6 +369,7 @@
       font-size: 1.25rem;
       font-weight: 600;
       margin-bottom: 0.75rem;
+      color: var(--text);
     }
 
     .project-desc {
@@ -504,7 +510,7 @@
 <body>
   <nav>
     <div class="container">
-      <div class="logo">&lt;dev/&gt;</div>
+      <div class="logo">OB</div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -516,12 +522,12 @@
   <section id="hero">
     <div class="container">
       <div class="hero-content">
-        <p class="hero-subtitle">Hi, I'm</p>
-        <h1 class="hero-title">Your Name<br><span>Web Developer</span></h1>
-        <p class="hero-desc">I build fast, accessible, and beautiful web experiences. Let's turn your ideas into reality.</p>
+        <p class="hero-subtitle">Full-Stack & AI Engineer</p>
+        <h1 class="hero-title">Oswaldo Bayona<br><span>SaaS Builder</span></h1>
+        <p class="hero-desc">Building scalable SaaS platforms. From MVP architecture to cloud deployment—turning ideas into production-ready products.</p>
         <div class="hero-cta">
           <a href="#projects" class="btn btn-primary">View My Work</a>
-          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+          <a href="mailto:bayonandrade@gmail.com" class="btn btn-outline">Get In Touch</a>
         </div>
       </div>
     </div>
@@ -532,21 +538,25 @@
       <h2 class="section-title">About Me</h2>
       <div class="about-grid">
         <div class="about-image">
-          <!-- Replace with your photo: <img src="your-photo.jpg" alt="Your Name"> -->
-          <div class="placeholder">Your Photo Here</div>
+          <img src="/img/profile.jpg" alt="Oswaldo Bayona">
         </div>
         <div class="about-text">
-          <h3>I'm a passionate web developer</h3>
-          <p>I specialize in building modern, responsive websites and web applications. With a focus on clean code and user experience, I create digital products that are both functional and beautiful.</p>
-          <p>When I'm not coding, you can find me exploring new technologies, contributing to open source, or sharing knowledge with the developer community.</p>
+          <h3>Full-Stack Engineer with 7+ Years of Experience</h3>
+          <p>Building scalable SaaS platforms and end-to-end web applications. I specialize in turning ideas into production-ready products, from MVP architecture and backend systems to modern React frontends and cloud deployment.</p>
+          <p>Experienced in developing AI-powered features, building agents with OpenCode, deploying models on GPU servers using RunPod, and managing full infrastructure with Docker and cloud environments.</p>
           <div class="skills">
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">SaaS Architecture</span>
             <span class="skill-tag">React</span>
-            <span class="skill-tag">Node.js</span>
-            <span class="skill-tag">HTML/CSS</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Git</span>
+            <span class="skill-tag">TypeScript</span>
+            <span class="skill-tag">AI Agents</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">RunPod/GPU</span>
+            <span class="skill-tag">WordPress</span>
+            <span class="skill-tag">Laravel</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">PostgreSQL</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">CI/CD</span>
           </div>
         </div>
       </div>
@@ -555,55 +565,89 @@
 
   <section id="projects">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
+      <h2 class="section-title">Experience</h2>
       <div class="projects-grid">
         <article class="project-card">
-          <div class="project-image">🚀</div>
+          <div class="project-image">
+            <img src="/img/tracknotion.png" alt="tracknotion logo" />
+          </div>
           <div class="project-content">
-            <h3 class="project-title">Project One</h3>
-            <p class="project-desc">A brief description of the project. What it does, the tech stack used, and the problem it solves.</p>
+            <h3>
+              <a class="project-title" href="https://tracknotion.com" target="__blank">TrackNotion</a>
+            </h3>
+            <p class="project-desc">Lead developer of call-tracking SaaS platform enabling marketing attribution through dynamic number insertion, call analytics, and AI-powered sentiment analysis from transcriptions.</p>
+            <div class="project-tech">
+              <span>Laravel</span>
+              <span>React</span>
+              <span>AI/ML</span>
+            </div>
+            <div class="project-links">
+              <span class="project-link">Senior Developer @ Fahrenheit Marketing</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-image">
+            <img src="/img/uhc.jpg" alt="UnitedHealthcare logo" />
+          </div>
+          <div class="project-content">
+            <h3>
+              <a class="project-title" href="https://www.uhc.com/" target="__blank">
+                UnitedHealthcare Migration
+              </a>
+            </h3>
+            <p class="project-desc">Migrated UnitedHealthcare's frontend from AngularJS to React, improving performance and maintainability.</p>
             <div class="project-tech">
               <span>React</span>
+              <span>TypeScript</span>
+              <span>Redux</span>
               <span>Node.js</span>
-              <span>MongoDB</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">View Demo →</a>
-              <a href="#" class="project-link">GitHub →</a>
+              <span class="project-link">Web Developer @ Scalac</span>
             </div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image">💡</div>
+          <div class="project-image">
+            <img src="/img/qt.jpg" alt="Quiktrip logo" />
+          </div>
           <div class="project-content">
-            <h3 class="project-title">Project Two</h3>
-            <p class="project-desc">A brief description of the project. What it does, the tech stack used, and the problem it solves.</p>
+            <h3>
+              <a class="project-title" href="http://quiktrip.com/" target="__blank">
+                Quiktrip
+              </a>
+            </h3>
+            <p class="project-desc">Development of Quiktrip WordPress website.</p>
             <div class="project-tech">
-              <span>Vue.js</span>
-              <span>Firebase</span>
-              <span>Tailwind</span>
+              <span>WordPress</span>
+              <span>React</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">View Demo →</a>
-              <a href="#" class="project-link">GitHub →</a>
+              <span class="project-link">Senior Developer @ Fahrenheit Marketing</span>
             </div>
           </div>
         </article>
 
         <article class="project-card">
-          <div class="project-image">⚡</div>
+          <div class="project-image">
+            <img src="/img/ooi.png" alt="Offline Order Importer Screenshot" />
+          </div>
           <div class="project-content">
-            <h3 class="project-title">Project Three</h3>
-            <p class="project-desc">A brief description of the project. What it does, the tech stack used, and the problem it solves.</p>
+            <h3>
+              <a class="project-title" href="https://www.bigcommerce.com/apps/offline-order-importer-by-fahrenheit-marketing/" target="__blank">
+                Offline Order Importer by Fahrenheit Marketing
+              </a>
+            </h3>
+            <p class="project-desc">BigCommerce app to upload orders with multiple recipients from a single spreadsheet.</p>
             <div class="project-tech">
-              <span>Next.js</span>
-              <span>Prisma</span>
-              <span>PostgreSQL</span>
+              <span>Laravel</span>
+              <span>React</span>
             </div>
             <div class="project-links">
-              <a href="#" class="project-link">View Demo →</a>
-              <a href="#" class="project-link">GitHub →</a>
+              <span class="project-link">Senior Developer @ Fahrenheit Marketing</span>
             </div>
           </div>
         </article>
@@ -614,25 +658,19 @@
   <section id="contact">
     <div class="container">
       <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-intro">Have a project in mind or want to collaborate? Feel free to reach out!</p>
-      
-      <div class="contact-form-embed">
-        <!-- Replace with your Google Form embed code -->
-        <iframe src="https://docs.google.com/forms/d/e/your-form-id/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-      </div>
+      <p class="contact-intro">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+      <p style="margin-bottom: 2rem;"><a href="mailto:bayonandrade@gmail.com" style="color: var(--accent); text-decoration: none; font-size: 1.1rem;">bayonandrade@gmail.com</a></p>
 
       <div class="social-links">
-        <a href="#" aria-label="GitHub">GH</a>
-        <a href="#" aria-label="LinkedIn">LI</a>
-        <a href="#" aria-label="Twitter">TW</a>
-        <a href="mailto:your@email.com" aria-label="Email">✉</a>
+        <a href="https://www.linkedin.com/in/oswaldo-bayona" aria-label="LinkedIn">LI</a>
+        <a href="mailto:bayonandrade@gmail.com" aria-label="Email">✉</a>
       </div>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>© 2026. Built with ☕ and code.</p>
+      <p>B.Sc. Computer Science | ESPOL</p>
     </div>
   </footer>
 
